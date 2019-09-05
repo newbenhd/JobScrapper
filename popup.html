@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./library/jquery-ui.css">
+    <script src="./library/jquery.min.js"></script> <!-- v3.4.1 -->
+    <script src="./library/jquery-ui.min.js"></script> <!-- v1.12.1 -->
+</head>
+<body>
+<header class="header">
+    <h3>Job Scrapper</h3>
+</header>
+<div id="menu-bar">
+    <form onSubmit="">
+        <input type="text" placeholder="Enter Keyword..." name="keyword" />
+        <input type="submit" placeholder="Submit">
+    </form>
+    <div class="keyword-list">
+        <ul>
+
+        </ul>
+    </div>
+</div>
+<div class="list">
+    <div class="bookmark">
+        <div id="bookmark-toggle">Bookmark</div>
+        <div id="bookmark-list">
+        </div>
+    </div>
+    <div class="indeed">
+        <div id="indeed-toggle">Indeed</div>
+        <div id="indeed-list"></div>
+    </div>
+    <div class="craiglist">
+        <div id="craiglist-toggle">Craiglist</div>
+        <div id="craiglist-list"></div>
+    </div>
+</div>
+<script src="./index.js"></script>
+</body>
+</html>
