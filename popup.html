@@ -12,9 +12,21 @@
     <h3>Job Scrapper</h3>
 </header>
 <div id="menu-bar">
-    <form onSubmit="">
+    <form id="menu-form">
         <input type="text" placeholder="Enter Keyword..." name="keyword" />
-        <input type="submit" placeholder="Submit">
+        <input type="submit" placeholder="Submit" value="Submit" />
+        <select name="sortby" id="sortby">
+            <option value="salary">Salary</option>
+            <option value="location">Location</option>
+        </select>
+<!--        <div class="input-field col s12">-->
+<!--            <select multiple>-->
+<!--                <option value="" disabled selected>Choose your option</option>-->
+<!--                <option value="salary">Salary</option>-->
+<!--                <option value="location">Location</option>-->
+<!--            </select>-->
+<!--            <label>Sort searches by...</label>-->
+<!--        </div>-->
     </form>
     <div class="keyword-list">
         <ul>
@@ -31,6 +43,10 @@
     <div class="indeed">
         <div id="indeed-toggle">Indeed</div>
         <div id="indeed-list"></div>
+    </div>
+    <div class="glassdoor">
+        <div id="glassdoor-toggle">Glassdoor</div>
+        <div id="glassdoor-list"></div>
     </div>
     <div class="craiglist">
         <div id="craiglist-toggle">Craiglist</div>
